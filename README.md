@@ -4,7 +4,7 @@
 The ultimate small size tool for easily downloading YouTube videos in '.mp3' format or highest resolution video.Just by using python.
 
 An Android tool.
-
+😀
 You just need to install 'python3' and 'git' in your terminal and run the commands below.(*Run step by step)
 
 DON'T COPY THE CODES ⛔
