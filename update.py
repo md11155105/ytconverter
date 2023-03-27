@@ -7,6 +7,6 @@ import os
 os.chdir('/data/data/com.termux/files/home')
 os.system('mv ytconverter bytconverter')
 os.system('git clone https://github.com/kaifcodec/ytconverter.git')
-os.system('rm -f $HOME/bytconverter ')
+os.system('rm -r -f $HOME/bytconverter ')
 
 print("\n RESTART YOUR TERMUX APPLICATION AND 'YT Converter' tool.")
