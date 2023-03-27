@@ -9,4 +9,4 @@ os.system('mv ytconverter bytconverter')
 os.system('git clone https://github.com/kaifcodec/ytconverter.git')
 os.system('rm -f $HOME/bytconverter ')
 
-print("\n RESTART YOUR TERMUX APPLICATION AND 'YT Converter' tool".)
+print("\n RESTART YOUR TERMUX APPLICATION AND 'YT Converter' tool.")
