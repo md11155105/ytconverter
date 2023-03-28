@@ -50,7 +50,7 @@ logo_design_2 = '''
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
-auth_token='04af6666c3c97fc7f67bf13ae277b820'
+auth_token='6978095e0ced5eafb5ebf250a357e91d'
 logo_design_3 = Fore.RED + '''
                       ,____
                       |---.\\
