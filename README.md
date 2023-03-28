@@ -25,6 +25,11 @@ cd ytconverter.py
 
 python3 ytconverter.py
 
+###############
+FOR GETTING VERSION INFO,
+ RUN :
+$ 'python version.py'
+
 ![Screenshot_20230216-082615](https://user-images.githubusercontent.com/98528577/219256583-944c3679-1221-4941-b486-51216b979dae.png)
 
 ![Screenshot_20230216-082638](https://user-images.githubusercontent.com/98528577/219256609-a9e7b63a-7c4e-4f73-b482-6dbf565d0569.png)
