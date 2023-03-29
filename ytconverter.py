@@ -117,7 +117,7 @@ des1=f.apply(f1,'/red')
 des2=f.apply(f2,'/yellow')
 des3=f.apply(f3,'/cyan')
 des4=f.apply(f4,'/cyan')
-info =f.apply("WHAT DO YOU THINK ABOUT KAIF | YOU CAN WRITE ANYTHING YOU WANT(GOOD/BAD OR WHAT YOU THINK REALLY)[DON'T SEND THIS BLANK THEN YOU WILL MISS A PREMIUM OFFER : ", "/green/bold")
+info =f.apply("WHAT DO YOU THINK ABOUT KAIF | YOU CAN WRITE ANYTHING YOU WANT (WRITE AT LEAST A LINE WHAT YOU THINK REALLY)[DON'T SEND THIS BLANK THEN YOU WILL MISS A PREMIUM OFFER : ", "/green/bold")
 burl=f.apply('Bad url check the url first','/red/bold')
 error=f.apply('AN ERROR OCCURRED, RUN THE CODE AGAIN','/red/bold')
 def main_title():       
