@@ -52,6 +52,12 @@ logo_design_2 = '''
           oNMm-  -mMNs      KAIF_CODEC'''
 auth_token='6978095e0ced5eafb5ebf250a357e91d'
 logo_design_3 = Fore.RED + '''
+ __  __     ______     __     ______   ______     ______     _____     ______     ______    
+/\ \/ /    /\  __ \   /\ \   /\  ___\ /\  ___\   /\  __ \   /\  __-.  /\  ___\   /\  ___\   
+\ \  _"-.  \ \  __ \  \ \ \  \ \  __\ \ \ \____  \ \ \/\ \  \ \ \/\ \ \ \  __\   \ \ \____  
+ \ \_\ \_\  \ \_\ \_\  \ \_\  \ \_\    \ \_____\  \ \_____\  \ \____-  \ \_____\  \ \_____\ 
+  \/_/\/_/   \/_/\/_/   \/_/   \/_/     \/_____/   \/_____/   \/____/   \/_____/   \/_____/ 
+                                                                                            
                       ,____
                       |---.\\
               ___     |    `      KAIF_CODEC
@@ -59,7 +65,7 @@ logo_design_3 = Fore.RED + '''
             |  |"|_/\/|
             ;  |-;| /_|         REAP THE REWARDS
            / \_| |/ \ |
-          /      \/\( |
+          /      \/\(           YT Converter
           |   /  |` ) |
           /   \ _/    |
          /--._/  \    |
@@ -121,7 +127,7 @@ info =f.apply("WHAT DO YOU THINK ABOUT KAIF | YOU CAN WRITE ANYTHING YOU WANT (W
 burl=f.apply('Bad url check the url first','/red/bold')
 error=f.apply('AN ERROR OCCURRED, RUN THE CODE AGAIN','/red/bold')
 def main_title():       
- logo_list=[logo_design_1,logo_design_2,logo_design_3,logo_design_4,logo_design_4]
+ logo_list=[logo_design_1,logo_design_2,logo_design_3,logo_design_4]
  title=random.choice(logo_list)
  print(title)
  
@@ -143,7 +149,6 @@ text4=f.apply("Taken time to download =", "/cyan/bold")
 
 def main_mp4():
  print('''
-
 
 
 ''')
@@ -170,11 +175,11 @@ def main_mp4():
  os.rename(out_file, new_file)
 
  ltext=f.apply(" Video has been successfully downloaded.","/green/bold")
- print('\n',str(yt.title) ,ltext) 
+ print('\n',str(yt.title) ,ltext)
 
  time2=int(time.time())
 
- 
+
 
  ftime=time2-time1
  coloured_time=f.apply(ftime,"/cyan/bold")
@@ -184,7 +189,6 @@ def main_mp4():
 
 def main_mp3():
  print('''
- 
 
 
 ''')
