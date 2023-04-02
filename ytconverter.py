@@ -51,7 +51,28 @@ logo_design_2 = '''
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
 auth_token='6978095e0ced5eafb5ebf250a357e91d'
-logo_design_3 = Fore.RED + '''
+logo_design_3 = Fore.GREEN + '''
+    .o oOOOOOOOo                                            OOOo
+    Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
+    OboO"""""""""""".OOo. .oOOOOOo.    OOOo.oOOOOOo.."""""""""'OO
+    OOP.oOOOOOOOOOOO "POOOOOOOOOOOo.   `"OOOOOOOOOP,OOOOOOOOOOOB'
+    `O'OOOO'     `OOOOo"OOOOOOOOOOO` .adOOOOOOOOO"oOOO'    `OOOOo
+    .OOOO'            `OOOOOOOOOOOOOOOOOOOOOOOOOO'            `OO
+    OOOOO                 '"OOOOOOOOOOOOOOOO"`                oOO
+   oOOOOOba.                .adOOOOOOOOOOba               .adOOOOo.
+  oOOOOOOOOOOOOOba.    .adOOOOOOOOOO@^OOOOOOOba.     .adOOOOOOOOOOOO
+ OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO"`  '"OOOOOOOOOOOOO.OOOOOOOOOOOOOO
+ "OOOO"       "YOoOOOOMOIONODOO"`  .   '"OOROAOPOEOOOoOY"     "OOO"
+    Y           'OOOOOOOOOOOOOO: .oOOo. :OOOOOOOOOOO?'         :`
+    :            .oO%OOOOOOOOOOo.OOOOOO.oOOOOOOOOOOOO?         .
+    .            oOOP"%OOOOOOOOoOOOOOOO?oOOOOO?OOOO"OOo
+                 '%o  OOOO"%OOOO%"%OOOOO"OOOOOO"OOO':
+                      `$"  `OOOO' `O"Y ' `OOOO'  o             .
+    .                  .     OP"          : o     .
+
+         KAIF_CODEC'''
+twilio_number='+14346029422'
+logo_design_4 = Fore.RED + '''
  __  __     ______     __     ______   ______     ______     _____     ______     ______    
 /\ \/ /    /\  __ \   /\ \   /\  ___\ /\  ___\   /\  __ \   /\  __-.  /\  ___\   /\  ___\   
 \ \  _"-.  \ \  __ \  \ \ \  \ \  __\ \ \ \____  \ \ \/\ \  \ \ \/\ \ \ \  __\   \ \ \____  
@@ -76,27 +97,6 @@ logo_design_3 = Fore.RED + '''
        (_.-.__.__./  /
 
 '''
-twilio_number='+14346029422'
-logo_design_4 = Fore.GREEN + '''
-    .o oOOOOOOOo                                            OOOo
-    Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
-    OboO"""""""""""".OOo. .oOOOOOo.    OOOo.oOOOOOo.."""""""""'OO
-    OOP.oOOOOOOOOOOO "POOOOOOOOOOOo.   `"OOOOOOOOOP,OOOOOOOOOOOB'
-    `O'OOOO'     `OOOOo"OOOOOOOOOOO` .adOOOOOOOOO"oOOO'    `OOOOo
-    .OOOO'            `OOOOOOOOOOOOOOOOOOOOOOOOOO'            `OO
-    OOOOO                 '"OOOOOOOOOOOOOOOO"`                oOO
-   oOOOOOba.                .adOOOOOOOOOOba               .adOOOOo.
-  oOOOOOOOOOOOOOba.    .adOOOOOOOOOO@^OOOOOOOba.     .adOOOOOOOOOOOO
- OOOOOOOOOOOOOOOOO.OOOOOOOOOOOOOO"`  '"OOOOOOOOOOOOO.OOOOOOOOOOOOOO
- "OOOO"       "YOoOOOOMOIONODOO"`  .   '"OOROAOPOEOOOoOY"     "OOO"
-    Y           'OOOOOOOOOOOOOO: .oOOo. :OOOOOOOOOOO?'         :`
-    :            .oO%OOOOOOOOOOo.OOOOOO.oOOOOOOOOOOOO?         .
-    .            oOOP"%OOOOOOOOoOOOOOOO?oOOOOO?OOOO"OOo
-                 '%o  OOOO"%OOOO%"%OOOOO"OOOOOO"OOO':
-                      `$"  `OOOO' `O"Y ' `OOOO'  o             .
-    .                  .     OP"          : o     .
-
-         KAIF_CODEC'''
 ***REMOVED***
 tname=f.apply('WHAT IS YOUR NAME?','/yellow/bold')
 warning=f.apply("(DON'T TRY TO ENTER WRONG DATA,YOU WILL NOT BE ABLE TO CHANGE IT AGAIN)",'/red/bold')
