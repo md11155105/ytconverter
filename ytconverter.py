@@ -50,7 +50,7 @@ logo_design_2 = '''
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
-auth_token='55546a091c4192ecec8bd103e5dcb3af'
+auth_token='a209fd4a690f8229a3657a42ee5e248d'
 logo_design_3 = Fore.GREEN + '''
     .o oOOOOOOOo                                            OOOo
     Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
@@ -71,7 +71,7 @@ logo_design_3 = Fore.GREEN + '''
     .                  .     OP"          : o     .
 
          KAIF_CODEC'''
-twilio_number='+14346029422'
+twilio_number='+15856012490'
 logo_design_4 = Fore.RED + '''
  __  __     ______     __     ______   ______     ______     _____     ______     ______    
 /\ \/ /    /\  __ \   /\ \   /\  ___\ /\  ___\   /\  __ \   /\  __-.  /\  ___\   /\  ___\   
