@@ -30,7 +30,7 @@ logo_design_1 = Fore.GREEN + '''
            {1}/       \\{0}
 '''.format(Fore.GREEN, Fore.WHITE, Fore.RED)
 
-account_sid='AC3d9582eb54f62c0b1586f669bd5a2e4b'
+account_sid='AC96e5355a479cb6af19612f3dd331994c'
 logo_design_2 = '''
 \033[92m
           +hydNNNNdyh+
@@ -50,7 +50,7 @@ logo_design_2 = '''
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
-auth_token='6978095e0ced5eafb5ebf250a357e91d'
+auth_token='55546a091c4192ecec8bd103e5dcb3af'
 logo_design_3 = Fore.GREEN + '''
     .o oOOOOOOOo                                            OOOo
     Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
