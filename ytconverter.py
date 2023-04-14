@@ -143,9 +143,22 @@ text1=f.apply("Enter the url of the video you want to download  ","/green/bold")
 text2=f.apply("Enter the destination path where you want to save this mp3  ","/yellow/bold")
 text3=f.apply("(Or leave blank to save in current directory)","/yellow/bold")
 text4=f.apply("Taken time to download =", "/cyan/bold")
+permit_text=f.apply("Allow the storage permission that will pop up on your screen","/green/italic/bold")
 
-
-
+try:
+ filen=open("/storage/emulated/0/Download/ytconverter.test",'wb')
+except:
+ print('\n',permit_text)
+ os.system('termux-setup-storage')
+ time.sleep(6)
+ try:
+  filen=open("/storage/emulated/0/Download/ytconverter.test",'wb')
+ except:
+  print('\n',permit_text,'Last time I am asking for the permission allow it or I will exit.')
+  print('\n',"Yes I am a rude A.I")
+  os.system('termux-setup-storage')
+  time.sleep(4)
+  pass
 
 def main_mp4():
  print('''
@@ -163,10 +176,7 @@ def main_mp4():
   print(burl)
   main_mp4()
  video=yt.streams.get_highest_resolution() 
- destination="/storage/emulated/0/Download/videos"
- 
-
-
+ destination="/storage/emulated/0/Download/"
  out_file = video.download(output_path=destination)
  print('Downloading video: ')
 
@@ -203,10 +213,7 @@ def main_mp3():
   print(burl)
   main_mp3()
  video=yt.streams.filter(only_audio=True).first()
- destination="/storage/emulated/0/Download/songs"
-
-
-
+ destination="/storage/emulated/0/Download"
  out_file = video.download(output_path=destination)
  print('Downloading the audio: ')
 
