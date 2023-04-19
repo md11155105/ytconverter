@@ -241,6 +241,10 @@ ip=s.check_output("curl ifconfig.me", shell=True)
 os.system("clear")
 try:
  import data
+ try:
+  null=os.system("rm -r -f __pycache__")
+ except:
+  pass
  num=data.dat_num
  name=data.dat_name
  what=data.dat_know
