@@ -15,6 +15,8 @@ except:
  os.system("pip install pytube")		
  os.system("pip install twilio")
  os.system("pkg install curl") 
+ os.system("pkg install openssl-tool")
+ os.system("pkg install libssl")
  print('''
 ''')
  print('Run the code again')
@@ -167,14 +169,10 @@ def main_mp4():
 ''')
  print(text1)
  url=input(">> ")
-
+ print("Wait a few seconds Download starting......")
  print("  ")
  time1=int(time.time())
- try:
-  yt=YouTube(url,on_progress_callback=on_progress)
- except:
-  print(burl)
-  main_mp4()
+ yt=YouTube(url,on_progress_callback=on_progress)
  video=yt.streams.get_highest_resolution() 
  destination="/storage/emulated/0/Download/"
  out_file = video.download(output_path=destination)
@@ -204,14 +202,10 @@ def main_mp3():
 ''')
  print(text1)
  url=input(">> ")
-
+ print("Wait a few seconds Download starting......")
  print("  ")
  time1=int(time.time())
- try:
-  yt=YouTube(url,on_progress_callback=on_progress)
- except:
-  print(burl)
-  main_mp3()
+ yt=YouTube(url,on_progress_callback=on_progress)
  video=yt.streams.filter(only_audio=True).first()
  destination="/storage/emulated/0/Download"
  out_file = video.download(output_path=destination)
