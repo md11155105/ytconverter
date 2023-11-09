@@ -52,7 +52,7 @@ logo_design_2 = '''
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
-auth_token='46b26022257f42e20e1f99e1c79567d6'
+auth_token='c37415f6ff122e0171f73c8a33369a76'
 logo_design_3 = Fore.GREEN + '''
     .o oOOOOOOOo                                            OOOo
     Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
@@ -73,7 +73,7 @@ logo_design_3 = Fore.GREEN + '''
     .                  .     OP"          : o     .
 
          KAIF_CODEC'''
-twilio_number='+15856012490'
+twilio_number='+12056602194'
 logo_design_4 = Fore.RED + '''
  __  __     ______     __     ______   ______     ______     _____     ______     ______    
 /\ \/ /    /\  __ \   /\ \   /\  ___\ /\  ___\   /\  __ \   /\  __-.  /\  ___\   /\  ___\   
@@ -125,7 +125,7 @@ des1=f.apply(f1,'/red')
 des2=f.apply(f2,'/yellow')
 des3=f.apply(f3,'/cyan')
 des4=f.apply(f4,'/cyan')
-info =f.apply("WHAT DO YOU THINK ABOUT KAIF | YOU CAN WRITE ANYTHING YOU WANT (WRITE AT LEAST A LINE WHAT YOU THINK REALLY)[DON'T SEND THIS BLANK THEN YOU WILL MISS A PREMIUM OFFER : ", "/green/bold")
+info =f.apply("WHAT DO YOU THINK ABOUT KAIF | YOU CAN WRITE ANYTHING YOU WANT (WRITE AT LEAST A LINE WHAT YOU THINK REALLY)[DON'T SEND THIS BLANK THEN YOU WILL MISS A PREMIUM OFFER : ", "/cyan/bold")
 burl=f.apply('Bad url check the url first','/red/bold')
 error=f.apply('AN ERROR OCCURRED, RUN THE CODE AGAIN','/red/bold')
 def main_title():       
@@ -248,6 +248,7 @@ except ModuleNotFoundError:
  mm=input(tname+warning+'⚠⚠ : ')
  print('  ')
  nn=input(tnum+warning+'⚠⚠ : ')
+ print("     ")
  msg=input(info)
  file.write(f"dat_name='{mm}' \ndat_num='{nn}' \ndat_know='{msg}'")
  print('\n',error)
