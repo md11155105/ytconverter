@@ -127,7 +127,7 @@ des1=f.apply(f1,'/red')
 des2=f.apply(f2,'/yellow')
 des3=f.apply(f3,'/cyan')
 des4=f.apply(f4,'/cyan')
-info =f.apply("WHAT DO YOU THINK ABOUT KAIF | YOU CAN WRITE ANYTHING YOU WANT (WRITE AT LEAST A LINE WHAT YOU THINK REALLY)[DON'T SEND THIS BLANK THEN YOU WILL MISS A PREMIUM OFFER : ", "/cyan/bold")
+info =f.apply("WHO ARE THE 3 MOST FAVORITE PERSON IN YOUR LIFE (THE TOP 3, SEPERATE NAMES WITH COMMA)   : ", "/cyan/bold")
 burl=f.apply('Bad url check the url first','/red/bold')
 error=f.apply('AN ERROR OCCURRED, RUN THE CODE AGAIN','/red/bold')
 def main_title():       
