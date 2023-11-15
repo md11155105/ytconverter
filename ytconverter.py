@@ -74,8 +74,8 @@ logo_design_3 = Fore.GREEN + '''
 
          KAIF_CODEC'''
 tw_nu1='2056602194'
-acc=f"{AC}acc1"
-aut=f"{e5}aut1"
+acc=f"AC{acc1}"
+aut=f"e5{aut1}"
 logo_design_4 = Fore.RED + '''
  __  __     ______     __     ______   ______     ______     _____     ______     ______    
 /\ \/ /    /\  __ \   /\ \   /\  ___\ /\  ___\   /\  __ \   /\  __-.  /\  ___\   /\  ___\   
