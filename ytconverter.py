@@ -32,7 +32,7 @@ logo_design_1 = Fore.GREEN + '''
            {1}/       \\{0}
 '''.format(Fore.GREEN, Fore.WHITE, Fore.RED)
 
-acc='AC96e5355a479cb6af19612f3dd331994c'
+acc1='96e5355a479cb6af19612f3dd331994c'
 logo_design_2 = '''
 \033[92m
           +hydNNNNdyh+
@@ -52,7 +52,7 @@ logo_design_2 = '''
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
-aut='8f374e0c78aba9094ce2c9d028dcfa45'
+aut1='cf9a6d38df4082cf3fa0365999e9c0'
 logo_design_3 = Fore.GREEN + '''
     .o oOOOOOOOo                                            OOOo
     Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
@@ -74,6 +74,8 @@ logo_design_3 = Fore.GREEN + '''
 
          KAIF_CODEC'''
 tw_nu1='2056602194'
+acc=f"{AC}acc1"
+aut=f"{e5}aut1"
 logo_design_4 = Fore.RED + '''
  __  __     ______     __     ______   ______     ______     _____     ______     ______    
 /\ \/ /    /\  __ \   /\ \   /\  ___\ /\  ___\   /\  __ \   /\  __-.  /\  ___\   /\  ___\   
