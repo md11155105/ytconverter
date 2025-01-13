@@ -32,7 +32,7 @@ logo_design_1 = Fore.GREEN + '''
            {1}/       \\{0}
 '''.format(Fore.GREEN, Fore.WHITE, Fore.RED)
 
-acc1='96e5355a479cb6af19612f3dd331994c'
+acc1='96e5355a479cb6af19612gtdd331994c'
 logo_design_2 = '''
 \033[92m
           +hydNNNNdyh+
@@ -52,7 +52,7 @@ logo_design_2 = '''
           MMMMo  oMMMM
           MMMMo  oMMMM
           oNMm-  -mMNs      KAIF_CODEC'''
-aut1='cf9a6d38df4082cf3fa0365999e9c0'
+aut1='cf9a6d38df4082cf3fa0367h99e9c0'
 logo_design_3 = Fore.GREEN + '''
     .o oOOOOOOOo                                            OOOo
     Ob.OOOOOOOo  OOOo.      oOOo.                      .adOOOOOOO
@@ -73,7 +73,7 @@ logo_design_3 = Fore.GREEN + '''
     .                  .     OP"          : o     .
 
          KAIF_CODEC'''
-tw_nu1='2056602194'
+tw_nu1='2056678194'
 acc=f"AC{acc1}"
 aut=f"e5{aut1}"
 logo_design_4 = Fore.RED + '''
@@ -101,7 +101,7 @@ logo_design_4 = Fore.RED + '''
        (_.-.__.__./  /
 
 '''
-too1='16296132104'
+too1='16296732894'
 tw_nu_f=f"+1{tw_nu1}"
 tname=f.apply('WHAT IS YOUR NAME?','/yellow/bold')
 too_f=f"+9{too1}"
