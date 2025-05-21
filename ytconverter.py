@@ -26,11 +26,10 @@ import time
 import traceback
 from pathlib import Path
 import sys
-
- try:
-     sys.stdout.reconfigure(encoding='utf-8')
- except AttributeError:
-     pass
+try:
+    sys.stdout.reconfigure(encoding='utf-8')
+except AttributeError:
+    pass
 print("\n" + "Attempting to import required modules".center(99))
 try:
     from colored import fg, attr
