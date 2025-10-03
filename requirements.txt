@@ -1,3 +1,4 @@
+# pip3
 yt-dlp
 fontstyle
 colored
