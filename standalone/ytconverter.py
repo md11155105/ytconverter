@@ -10,6 +10,7 @@ import time
 import traceback
 from pathlib import Path
 import sys
+import argparse
 
 try:
     sys.stdout.reconfigure(encoding='utf-8')
@@ -241,7 +242,7 @@ def remove_ansi_styles(text: str) -> str:
     return ansi_escape.sub("", text)
 
 
-def get_download_path(format_str: str) -> str:
+def get_download_path(format_str: str, auto_mode=False) -> str:
     system = platform.system()
     home = Path.home()
 
@@ -260,6 +261,10 @@ def get_download_path(format_str: str) -> str:
         default_path = base_download / "videos"
     else:
         default_path = base_download
+
+    if auto_mode:
+        default_path.mkdir(parents=True, exist_ok=True)
+        return str(default_path)
 
     styled_path = fs.apply(str(default_path), "/green/bold")
     print(f"\nDefault download path for {format_str}: {styled_path}\n")
@@ -884,22 +889,73 @@ def main():
 
 
 
-try:
-    os.system("clear")
-    os.system("rm -r -f __pycache__ ")
-except:
-    pass
+def auto_download(url, format_type="mp3"):
+    """Auto download with best quality"""
+    url_pattern = re.compile(r"^(https?://)?(www\.)?(youtube\.com|youtu\.be)/.+$")
+    if not url_pattern.match(url):
+        print(fs.apply("Invalid URL. Please enter a valid YouTube URL.", "/red/bold"))
+        return
+    
+    system = platform.system()
+    home = Path.home()
+    if system == "Windows":
+        base_download = home / "Downloads"
+    elif system == "Darwin":
+        base_download = home / "Downloads"
+    elif is_android():
+        base_download = Path("/storage/emulated/0/Download")
+    else:
+        base_download = home / "Downloads"
+    
+    if format_type == "mp3":
+        destination = base_download / "audio"
+        destination.mkdir(parents=True, exist_ok=True)
+        print(fs.apply(f"\nAuto-downloading MP3 to {destination}...\n", "/cyan/bold"))
+        s.call([
+            sys.executable, "-m", "yt_dlp",
+            "-f", "bestaudio/best",
+            "-x", "--audio-format", "mp3",
+            "-o", os.path.join(str(destination), "%(title)s.%(ext)s"),
+            url
+        ])
+        print(fs.apply("\nMP3 downloaded successfully.", "/green/bold"))
+    else:
+        destination = base_download / "videos"
+        destination.mkdir(parents=True, exist_ok=True)
+        print(fs.apply(f"\nAuto-downloading MP4 to {destination}...\n", "/cyan/bold"))
+        ydl_opts = {
+            "format": "bestvideo+bestaudio/best",
+            "outtmpl": os.path.join(str(destination), "%(title)s.%(ext)s"),
+        }
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            ydl.download([url])
+        print(fs.apply("\nMP4 downloaded successfully.", "/green/bold"))
 
 
-bio()
-option = input(des4).strip()
-main()
-exitc = fs.apply(
-    "Press [ENTER] to continue downloading another content  ", "/green/bold"
-)
-print(exitc)
-choice = input(">>")
-while choice in ("", " "):
-    bio()
-    option = input(des4).strip()
-    main()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="YTConverter - YouTube downloader")
+    parser.add_argument("-u", "--url", help="YouTube URL to download")
+    parser.add_argument("-f", "--format", choices=["mp3", "mp4"], default="mp3", help="Output format (default: mp3)")
+    args = parser.parse_args()
+    
+    if args.url:
+        auto_download(args.url, args.format)
+    else:
+        try:
+            os.system("clear")
+            os.system("rm -r -f __pycache__ ")
+        except:
+            pass
+
+        bio()
+        option = input(des4).strip()
+        main()
+        exitc = fs.apply(
+            "Press [ENTER] to continue downloading another content  ", "/green/bold"
+        )
+        print(exitc)
+        choice = input(">>")
+        while choice in ("", " "):
+            bio()
+            option = input(des4).strip()
+            main()
