@@ -296,7 +296,7 @@ def main_mp4():
     )
     try:
         process = s.Popen(
-            ["yt-dlp", "--list-formats", url], stdout=s.PIPE, stderr=s.PIPE
+            [sys.executable, "-m", "yt_dlp", "--list-formats", url], stdout=s.PIPE, stderr=s.PIPE
         )
         stdout, stderr = process.communicate()
         if stderr:
@@ -403,7 +403,7 @@ def main_mp4():
             audio_destination = os.getcwd() + "/audio_temp"
             os.makedirs(audio_destination, exist_ok=True)
             audio_filename = os.path.join(audio_destination, "%(title)s.%(ext)s")
-            s.call(["yt-dlp", "-x", "--audio-format", "mp3", "-o", audio_filename, url])
+            s.call([sys.executable, "-m", "yt_dlp", "-x", "--audio-format", "mp3", "-o", audio_filename, url])
 
             # Locate the downloaded audio file
             for root, _, files in os.walk(audio_destination):
@@ -527,7 +527,7 @@ def main_mp3():
     print("\nFetching audio information (this process could take 5s)...\n")
     info_json={}
     try:
-        process = s.Popen(["yt-dlp", "-j", url], stdout=s.PIPE, stderr=s.PIPE)
+        process = s.Popen([sys.executable, "-m", "yt_dlp", "-j", url], stdout=s.PIPE, stderr=s.PIPE)
         stdout, stderr = process.communicate()
         if stderr:
             print(fs.apply(f"yt-dlp error: {stderr.decode('utf-8', errors='replace')}", "/red/bold"))
@@ -603,7 +603,9 @@ def main_mp3():
     try:
         s.call(
             [
-                "yt-dlp",
+                sys.executable,
+                "-m",
+                "yt_dlp",
                 "-f",
                 download_format,
                 "-x",
